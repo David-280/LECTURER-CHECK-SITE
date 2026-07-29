@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Buzz</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="left-text">
+    <h1>Campus Matterz</h1>
+    <p>Know your lecturers..</p>
+  </div>
+
+  <div class="main">
+
+    <div class="visual">
+      <div class="carousel">
+        <img src="images/image1.jpg.png" class="active">
+        <img src="images/image2.jpg.png">
+        <img src="images/image3.jpg.png">
+        <img src="images/image4.jpg.png">
+        <img src="images/image5.jpg.png">
+        <img src="images/image6.jpg.png">
+      </div>
+    </div>
+
+    <div class="panel">
+
+      <label class="upload-box" id="uploadBox">
+        <input type="file" id="imageInput" hidden>
+        <div class="upload-content" id="uploadContent">
+          <div class="upload-icon"> <img class="pop" src="images/image-gallery (1).png" alt=""></div>
+          <span>Upload Image</span>
+        </div>
+        <!-- PREVIEW INSIDE -->
+        <img id="preview" />
+      </label>
+
+      <img id="preview" style="display:none;" />
+
+      <button onclick="analyze()">Analyze</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
